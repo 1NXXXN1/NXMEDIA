@@ -139,7 +139,7 @@ a:focus {
 
 #logo {
 	display: flex;
-	align-items: left;
+	align-items: center;
 	justify-content: center;
 	user-select: none;
 	height: 100%;
