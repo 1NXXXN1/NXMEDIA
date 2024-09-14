@@ -125,19 +125,6 @@ a:focus {
 	background-color: var(--color-bg);
 }
 
-#social {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	user-select: none;
-	margin-left: auto;
-	height: 1.25rem;
-	width: 1.25rem;
-	margin-right: -0.75rem;
-	padding: 0 0.75rem;
-	border-left: 1px solid var(--color-border);
-}
-
 #logo {
 	display: flex;
 	align-items: center;
@@ -151,6 +138,18 @@ a:focus {
 	display: block;
 	height: 1.25rem;
 	width: 1.25rem;
+}
+
+#social_logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	margin-left: auto;
+	height: 100%;
+	margin-right: -0.75rem;
+	padding: 0 0.75rem;
+	border-left: 1px solid var(--color-border);
 }
 
 #title {
