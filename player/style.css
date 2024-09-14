@@ -131,9 +131,8 @@ a:focus {
 	justify-content: center;
 	user-select: none;
 	height: 100%;
-	margin-right: -0.75rem;
 	padding: 0 0.75rem;
-	border-left: 1px solid var(--color-border);
+	margin-right: -0.75rem;
 }
 
 #logo img {
