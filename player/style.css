@@ -131,7 +131,8 @@ a:focus {
 	justify-content: center;
 	user-select: none;
 	margin-left: auto;
-	height: 100%;
+	height: 1.25rem;
+	width: 1.25rem;
 	margin-right: -0.75rem;
 	padding: 0 0.75rem;
 	border-left: 1px solid var(--color-border);
