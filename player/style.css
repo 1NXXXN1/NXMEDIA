@@ -132,17 +132,14 @@ a:focus {
 	user-select: none;
 	height: 100%;
 	margin-right: -0.75rem;
+	padding: 0 0.75rem;
+	border-left: 1px solid var(--color-border);
 }
 
 #logo img {
 	display: block;
 	height: 1.25rem;
 	width: 1.25rem;
-}
-
-#social {
-	padding: 0 0.75rem;
-	border-left: 1px solid var(--color-border);
 }
 
 #title {
