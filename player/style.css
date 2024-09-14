@@ -140,14 +140,7 @@ a:focus {
 	width: 1.25rem;
 }
 
-#logo1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	user-select: none;
-	margin-left: auto;
-	height: 100%;
-	margin-right: -0.75rem;
+#social {
 	padding: 0 0.75rem;
 	border-left: 1px solid var(--color-border);
 }
