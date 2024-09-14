@@ -125,7 +125,7 @@ a:focus {
 	background-color: var(--color-bg);
 }
 
-#logo social {
+#social {
 	display: flex;
 	align-items: center;
 	justify-content: center;
