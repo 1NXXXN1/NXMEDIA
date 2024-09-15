@@ -157,7 +157,7 @@ function selectSource(sourceData) {
  * @param {string} title
  */
 function setTitle(title) {
-	document.title = `${title} | Tape Operator`;
+	document.title = `${title} | NX Media`;
 	titleElement.innerHTML = title?.replace(/\((.*)/, (match, content) => `<span>(${content}</span>`);
 }
 
