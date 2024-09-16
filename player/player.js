@@ -1,5 +1,5 @@
 // True if globalThis.init function was successfully called
-let initialized = true;
+let initialized = false;
 
 const containerElement = document.getElementById('container');
 const playerElement = document.getElementById('player');
