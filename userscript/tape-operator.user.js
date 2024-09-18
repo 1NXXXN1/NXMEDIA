@@ -5,8 +5,8 @@
 // @description     Watch movies on IMDB, TMDB, Kinopoisk and Letterboxd!
 // @version         3.1.0
 // @icon            https://raw.githubusercontent.com/1NXXXN1/Tape-Operator/main/assets/favicon.png
-// @updateURL       https://github.com/Kirlovon/1NXXXN1/raw/main/userscript/tape-operator.user.js
-// @downloadURL     https://github.com/Kirlovon/1NXXXN1/raw/main/userscript/tape-operator.user.js
+// @updateURL       https://github.com/1NXXXN1/Tape-Operator/raw/main/userscript/tape-operator.user.js
+// @downloadURL     https://github.com/1NXXXN1/Tape-Operator/raw/main/userscript/tape-operator.user.js
 // @run-at          document-idle
 // @grant           GM.info
 // @grant           GM.setValue
