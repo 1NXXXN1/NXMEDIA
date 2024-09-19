@@ -98,19 +98,19 @@
 		// Kinopoisk ID
 		if (url.match(KINOPOISK_MATCHER)) {
 			const id = url.split('/').at(4);
-			return { kinopoisk: id, title };
+			return { kinopoisk: id, title, countries };
 		}
 
 		// IMDB ID
 		if (url.match(IMDB_MATCHER)) {
 			const id = url.split('/').at(4);
-			return { imdb: id, title };
+			return { imdb: id, title, countries };
 		}
 
 		// TMDB ID
 		if (url.match(TMDB_MATCHER)) {
 			const id = url.split('/').at(4).split('-').at(0);
-			return { tmdb: id, title };
+			return { tmdb: id, title, countries };
 		}
 
 		// IMDB ID from Letterboxd
@@ -122,14 +122,14 @@
 			const imdbLink = elementsArray.find((link) => link?.href?.match(IMDB_MATCHER));
 			if (imdbLink) {
 				const imdbId = imdbLink.href.split('/').at(4);
-				if (imdbId) return { imdb: imdbId, title };
+				if (imdbId) return { imdb: imdbId, title, countries };
 			}
 
 			// Find TMDB ID
 			const tmdbLink = elementsArray.find((link) => link?.href?.match(TMDB_MATCHER));
 			if (tmdbLink) {
 				const tmdbId = tmdbLink.href.split('/').at(4)?.split('-')?.at(0);
-				if (tmdbId) return { tmdbId: tmdbId, title };
+				if (tmdbId) return { tmdbId: tmdbId, title, countries };
 			}
 
 			return null;
