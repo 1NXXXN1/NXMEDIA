@@ -109,6 +109,13 @@ a:focus {
 	aspect-ratio: 16 / 9;
 }
 
+#my_logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
 #content > span {
 	display: block;
 	text-align: center;
