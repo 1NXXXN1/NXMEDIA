@@ -281,7 +281,8 @@ function sendAnalytics(movieData) {
  */
 function setup() {
 	try {
-		logger.info('Setup started');		
+		logger.info('Setup started');
+		document.getElementById("background").style.opacity = "0.1";
 
 		// Show error if script not initialized after timeout
 		setTimeout(() => {
@@ -289,12 +290,12 @@ function setup() {
 			showScriptErrorMessage();
 			logger.error('Initialization timeout');
 			document.getElementById("player").style.display = "none";
-			document.getElementById("background").style.opacity = "0.1";
 		}, 5000);
 
 		// Get cached movie key from URL
 		const movieKey = getSearchParam('movie');
 		if (!movieKey) return;
+		
 
 		// Get movie data from cache
 		const cachedData = localStorage.getItem(movieKey);
@@ -319,9 +320,6 @@ versionElement.innerHTML = `v${REQUIRED_VERSION}`;
 
 // Reveal body
 document.body.classList.add('visible');
-setTimeout(() => {
-	document.getElementById("player").style.display = "none";
-}, -5000);
 
 // Make init function available for external use
 globalThis.init = init;
