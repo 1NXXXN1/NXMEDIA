@@ -289,8 +289,9 @@ function setup() {
 			showScriptErrorMessage();
 			logger.error('Initialization timeout');
 			document.getElementById("player").style.display = "none";
+			document.getElementById("background").style.opacity = "0.1";
 		}, 5000);
-		
+
 		// Get cached movie key from URL
 		const movieKey = getSearchParam('movie');
 		if (!movieKey) return;
@@ -318,6 +319,7 @@ versionElement.innerHTML = `v${REQUIRED_VERSION}`;
 
 // Reveal body
 document.body.classList.add('visible');
+document.getElementById("player").classList.add('invisible');
 
 // Make init function available for external use
 globalThis.init = init;
