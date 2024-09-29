@@ -319,7 +319,6 @@ versionElement.innerHTML = `v${REQUIRED_VERSION}`;
 
 // Reveal body
 document.body.classList.add('visible');
-document.getElementById("player").classList.add('invisible');
 
 // Make init function available for external use
 globalThis.init = init;
