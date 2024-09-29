@@ -290,6 +290,9 @@ function setup() {
 			logger.error('Initialization timeout');
 		}, 5000);
 
+		//if initialization error get 
+		document.getElementById("player").style.display = "none";
+
 		// Get cached movie key from URL
 		const movieKey = getSearchParam('movie');
 		if (!movieKey) return;
