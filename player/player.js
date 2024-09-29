@@ -42,7 +42,8 @@ async function init(data, scriptVersion) {
 		// Get available players sources
 		const sources = await fetchSources(movieData)
 		if (sources.length === 0) {
-			showPlayerText('Not Found 😕<br>Ничего не найдено 😕<br>Film topilmadi 😕');
+			showPlayerText('Not Found!<br><br>Ничего не найдено!<br><br>Film topilmadi!');
+			document.getElementById("content").style.background = "brown";
 			return;
 		}
 
@@ -290,6 +291,7 @@ function setup() {
 			logger.error('Initialization timeout');
 			document.getElementById("player").style.display = "none";
 			document.getElementById("background").style.opacity = "0.1";
+			document.getElementById("container").style.gap = "0";
 		}, 5000);
 
 		// Get cached movie key from URL
