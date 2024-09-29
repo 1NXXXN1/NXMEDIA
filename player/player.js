@@ -42,7 +42,7 @@ async function init(data, scriptVersion) {
 		// Get available players sources
 		const sources = await fetchSources(movieData)
 		if (sources.length === 0) {
-			showPlayerText('Film topilmadi 😕\n\n\nНичего не найдено 😕<br>Not Found 😕');
+			showPlayerText('Not Found 😕<br>Ничего не найдено 😕<br>Film topilmadi 😕');
 			return;
 		}
 
@@ -319,6 +319,7 @@ versionElement.innerHTML = `v${REQUIRED_VERSION}`;
 
 // Reveal body
 document.body.classList.add('visible');
+document.getElementById("player").style.display = "none";
 
 // Make init function available for external use
 globalThis.init = init;
