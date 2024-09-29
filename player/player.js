@@ -42,8 +42,10 @@ async function init(data, scriptVersion) {
 		// Get available players sources
 		const sources = await fetchSources(movieData)
 		if (sources.length === 0) {
-			showPlayerText('Not Found!<br><br>Ничего не найдено!<br><br>Film topilmadi!');
-			document.getElementById("content").style.background = "brown";
+			showPlayerText('Ничего не найдено!<br><br>Film topilmadi!');
+			document.getElementById("content").style.background = "URL(https://ak4.picdn.net/shutterstock/videos/1028021054/thumb/11.jpg)";
+			document.getElementById("content").style.backgroundPosition = "center";
+			document.getElementById("content").style.boxShadow = "inset 0px 0px 20rem 8rem var(--color-bg)";
 			return;
 		}
 
@@ -290,6 +292,7 @@ function setup() {
 			showScriptErrorMessage();
 			logger.error('Initialization timeout');
 			document.getElementById("player").style.display = "none";
+			document.getElementById("mylogo").style.display = "none";
 			document.getElementById("background").style.opacity = "0.1";
 			document.getElementById("container").style.gap = "0";
 		}, 5000);
