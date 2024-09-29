@@ -282,7 +282,6 @@ function sendAnalytics(movieData) {
 function setup() {
 	try {
 		logger.info('Setup started');
-		document.getElementById("background").style.opacity = "0.1";
 
 		// Show error if script not initialized after timeout
 		setTimeout(() => {
@@ -290,6 +289,7 @@ function setup() {
 			showScriptErrorMessage();
 			logger.error('Initialization timeout');
 			document.getElementById("player").style.display = "none";
+			document.getElementById("background").style.opacity = "0.1";
 		}, 5000);
 
 		// Get cached movie key from URL
