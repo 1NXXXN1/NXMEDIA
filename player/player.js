@@ -281,10 +281,6 @@ function sendAnalytics(movieData) {
  */
 function setup() {
 	try {
-		setTimeout(() => {
-			document.getElementById("player").style.display = "none";
-		}, -2000);
-		document.getElementById("player").style.display = "flex";
 		logger.info('Setup started');		
 
 		// Show error if script not initialized after timeout
