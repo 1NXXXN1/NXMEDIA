@@ -321,7 +321,7 @@ versionElement.innerHTML = `v${REQUIRED_VERSION}`;
 document.body.classList.add('visible');
 setTimeout(() => {
 	document.getElementById("player").style.display = "none";
-}, 5000);
+}, -5000);
 
 // Make init function available for external use
 globalThis.init = init;
