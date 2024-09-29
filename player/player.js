@@ -42,7 +42,7 @@ async function init(data, scriptVersion) {
 		// Get available players sources
 		const sources = await fetchSources(movieData)
 		if (sources.length === 0) {
-			showPlayerText('Film topilmadi 😕\nНичего не найдено 😕\nNot Found 😕');
+			showPlayerText('Film topilmadi 😕\n\n\nНичего не найдено 😕<br>Not Found 😕');
 			return;
 		}
 
