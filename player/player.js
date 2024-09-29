@@ -281,18 +281,19 @@ function sendAnalytics(movieData) {
  */
 function setup() {
 	try {
-		logger.info('Setup started');
+		setTimeout(() => {
+			document.getElementById("player").style.display = "none";
+		}, -2000);
+		logger.info('Setup started');		
 
 		// Show error if script not initialized after timeout
 		setTimeout(() => {
 			if (initialized) return;
 			showScriptErrorMessage();
 			logger.error('Initialization timeout');
+			document.getElementById("player").style.display = "none";
 		}, 5000);
-
-		//if initialization error get 
-		document.getElementById("player").style.display = "none";
-
+		
 		// Get cached movie key from URL
 		const movieKey = getSearchParam('movie');
 		if (!movieKey) return;
