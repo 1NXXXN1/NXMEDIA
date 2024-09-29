@@ -297,6 +297,11 @@ a:focus {
 	background-size: 336px;
 }
 
+#player.invisible {
+	opacity: 0;
+}
+
+
 /* Animations -------------------------------- */
 
 @keyframes Reveal {
@@ -329,7 +334,7 @@ a:focus {
 	}
 
 	#player {
-		height: 100%;
+		opacity: 0;
 	}
 
 	#background {
