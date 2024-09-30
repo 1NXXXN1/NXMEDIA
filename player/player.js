@@ -293,7 +293,7 @@ function setup() {
 			logger.error('Initialization timeout');
 			document.getElementById("player").style.display = "none";
 			document.getElementById("background").style.opacity = "0.1";
-		}, 2000);
+		}, 2500);
 
 		// Get cached movie key from URL
 		const movieKey = getSearchParam('movie');
