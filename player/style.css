@@ -49,9 +49,40 @@ body.visible {
 	opacity: 1;
 }
 
+.hidden {
+	display: none;
+}
+
 button {
 	all: unset;
 	cursor: pointer;
+	margin-right: 10px;
+}
+
+#button1 {
+	margin: 0 10 0 10;
+	padding: 10px;
+	background-color: var(--color-white);
+	border-radius: 10px;
+	border-style: solid var(--color-grey);
+	color: #0d0d0d;
+	transition: color 0.5s ease, transform 0.5s ease;
+}
+
+#button1:hover,
+#button1:focus {
+	background-color: #187af1;
+	border-radius: 10px;
+	color: var(--color-white);
+	text-decoration: bold;
+	transform: scale(1.1);
+}
+
+#button1.selected{
+	background-color: #187af1;
+	border-radius: 10px;
+	color: var(--color-white);
+	text-decoration: bold;
 }
 
 a {
