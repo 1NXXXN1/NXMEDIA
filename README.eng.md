@@ -1,4 +1,4 @@
-![Image](/assets/poster.webp)
+![Image](/player/assets/background.png)
 
 With this script, [IMDB](https://www.imdb.com/), [TMDB](https://www.themoviedb.org/), [Kinopoisk](https://www.kinopoisk.ru/) and [Letterboxd](https://letterboxd.com/) will become free online cinemas! On each page with a movie or TV series, a flag will appear in the upper left corner. By clicking on it, you will open a player with the movie.
 
