@@ -4,8 +4,6 @@ With this script, [IMDB](https://www.imdb.com/), [TMDB](https://www.themoviedb.o
 
 [RUS](README.md) | **ENG**
 
-<br>
-
 ## Installation 🎓
 
 1. Install one of the extensions for running custom scripts:
@@ -23,31 +21,9 @@ Done, now open a page with a movie _([example](https://letterboxd.com/film/babyl
 
 > If the flag doesn't appear, check if the script is installed correctly and restart your browser.
 
-<br>
-
-## Deploy 🚀
-
-In case the link to the player is blocked in your country, you can deploy your own version of the site!
-
-> This instruction is intended for developers and other users with the necessary technical skills.
-
-1. Publish the static site located in the `player` folder of this repository.
-
-    - Files and the `index.html` page should be accessible at the main address. _(http://example.com/index.html or simply http://example.com)_
-    - Remove the analytics script located in the header of the `index.html` file to avoid sending anonymous analytics.
-
-2. Edit the script from the `userscript` folder:
-
-    - Replace the `PLAYER_URL` variable with the link to your site.
-    - Add a line with the link to your site in the `@match` header. This is necessary for the browser to execute the script on your player page.
-    - Remove the `@updateURL` and `@downloadURL` headers from the file so that the script doesn't try to update itself.
-    - Make sure that the version in the `@version` header is equal to or not lower than the version specified in the `config.js` file, in the `REQUIRED_VERSION` variable. Otherwise, there will be a notification about an outdated script on the site.
-
 3. Install the edited script.
 
 > Self-hosting doesn't guarantee 100% site functionality, as [Kinobox API](https://kinobox.tv/) is used to obtain sources, which is currently impossible to deploy independently.
-
-<br>
 
 ## Disclaimer
 
