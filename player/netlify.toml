@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/path/to/private/*"
+to = "/"
+status = 403
+force = true
