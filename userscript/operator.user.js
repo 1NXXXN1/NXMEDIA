@@ -45,9 +45,9 @@
 
 	// Logging utility
 	const logger = {
-		info: (...args) => console.info('[Tape Operator Script]', ...args),
-		warn: (...args) => console.warn('[Tape Operator Script]', ...args),
-		error: (...args) => console.error('[Tape Operator Script]', ...args),
+		info: (...args) => console.info('[Operator Script]', ...args),
+		warn: (...args) => console.warn('[Operator Script]', ...args),
+		error: (...args) => console.error('[Operator Script]', ...args),
 	}
 
 	let previousUrl = '/';
